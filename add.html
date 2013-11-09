@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>--- Agregar Producto--- Ocnic Life S.A. de C.V.</title>
+<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+<script src="js/add.js"></script>
+</head>
+
+<body>
+<div class = "principal">
+<table>
+<tr>
+<td width = "25%"><a href="index.html"><img src = "img/logo.png" width = "80%" height = "50%" style = "border-radius: 10pt;" /></a></td>
+<td><a href="add.html"><img width="400px" height="200px" id="slid1" src = "img/bnnr.gif"></a></td>
+<td><a href="Buscador.htm"><img src="img/btn.jpg" width = "40%" height = "10%" style = "border-radius: 10pt;" alt="ir al buscador"/><br> ir al buscador</a></td>
+</tr>
+</table>
+</div>
+<div id = "conmenu">
+<ul id = "menu">
+    <li><a href="index.html" class="menu_left">Inicio</a></li>
+    <li><a href="paginas/categ.html">Ventas</a></li>
+    <li><a href="paginas/proms.html">CyberMonday</a></li>
+    <li><a href="paginas/us.html" class = "menu_right">Contactenos</a></li>
+</ul>
+</div>
+<div class = "principal">
+<br/>
+            <H3>Ahora puedes agregar un nuevo producto</H3>
+            <br/>
+            <hr align="center" color="#DDDDDD" size="1" />
+            <p style="color:#FFF; background-color:#999" >
+            como usuario premiamos tu preferencia! solo debes llenar todos los campos de este formulario y podras ver tu producto en el catalogo de productos nuevos
+             <br/>
+             Como siempre, apreciamos y agradecemos tu preferencia.
+            <hr align="center" color="#DDDDDD" size="1" />
+            </p>
+            <center><table><form name="frm" autocomplete="on">
+                <tr>
+                <td> <label for="txtnom">Nombre: </label></td>
+                <td> <input type="text" name="txtnom" max="35" min="3"></td>
+        <td><label for="textito">descripcion: </label></td>
+        <td><textarea name="textito" cols=40 rows=3> </textarea> </td>
+        </tr>
+        
+        <td> <label for="cat">categoria:</label></td>
+                <td> <select name="cat">
+                <option value="android market">Android Market</option>
+                <option value="hardware">hardware</option>
+                <option value="software">Software</option>
+                <option value="gadgets">Gadgets</option>
+             </select></td> 
+             <td> <label for="img">precio: </label></td>
+             <td><input type="text" name="pre" value="" ></td>
+         </tr>
+         <tr>
+     <td><input type="button" name="boton" value="Nuevo" id="ver" style="margin-left:100%" onClick="datos()"></td>
+        <td><input type="button" name="ans" value="Anteriores" id="ver" style="margin-left:100%" onClick="show ( localStorage.pronom, localStorage.procat, localStorage.prodes, localStorage.prosrc, localStorage.pronom2, localStorage.procat2, localStorage.prodes2, localStorage.prosrc2, localStorage.propre, localStorage.propre2)"></td>
+        </tr></form>
+            </table></center>
+            </p>
+            </p>
+</div>
+<footer>
+        	<hr align="center" color="#000" size="2" />
+            <p>&copy; OCNIC EXCELENS&trade; | Todos los derechos reservados | Lenguaje Interpretado al cliente</p>
+        </footer>
+</body>
+</html>
